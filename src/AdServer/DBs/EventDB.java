@@ -46,7 +46,6 @@ public class EventDB {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("EventDB Contents:\n");
         eventData.forEach((adId, adEventData) -> {
             sb.append("Ad ID: ").append(adId)
                     .append(" -> ").append(adEventData)
