@@ -42,4 +42,16 @@ public class EventDB {
     public List<Integer> getAllAdIds() {
         return eventData.keySet().stream().toList();
     }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("EventDB Contents:\n");
+        eventData.forEach((adId, adEventData) -> {
+            sb.append("Ad ID: ").append(adId)
+                    .append(" -> ").append(adEventData)
+                    .append("\n");
+        });
+        return sb.toString();
+    }
 }

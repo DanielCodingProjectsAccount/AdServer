@@ -29,7 +29,7 @@ public class AdDB {
     }
 
     public List<Ad> getAdsByIdentifiers(AdIdentifiers adIdentifiers) {
-        if(!adIdentifierToAdList.containsKey(adIdentifiers)){
+        if (!adIdentifierToAdList.containsKey(adIdentifiers)) {
             return null;
         }
         return adIdentifierToAdList.get(adIdentifiers)

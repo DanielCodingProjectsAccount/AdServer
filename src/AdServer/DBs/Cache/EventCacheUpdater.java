@@ -38,6 +38,7 @@ public class EventCacheUpdater {
 
 
     private void updateCache() {
+        System.out.println("EventDB : \n" + eventDB.toString());
         for (int adId : eventDB.getAllAdIds()) {
             try {
                 AdEventData adEventData = eventDB.getAdEventData(adId);

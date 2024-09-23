@@ -40,7 +40,7 @@ public class AggregatorService {
     }
 
     public void flushAggregatedDataToDB() {
-        System.out.println("Flushing Aggregated data to EventDB");
+//        System.out.println("Flushing Aggregated data to EventDB");
         for (Map.Entry<Integer, AdEventData> entry : aggregatedData.entrySet()) {
             try {
                 int adId = entry.getKey();

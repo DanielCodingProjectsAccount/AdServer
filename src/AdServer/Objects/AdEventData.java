@@ -86,4 +86,14 @@ public class AdEventData {
     public int getRegisters() {
         return registers;
     }
+
+    @Override
+    public String toString() {
+        return "AdEventData {" +
+                "adId=" + adId +
+                ", impressions=" + impressions +
+                ", clicks=" + clicks +
+                ", registers=" + registers +
+                '}';
+    }
 }
